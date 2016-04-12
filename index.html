@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Fixed Sidebars</title>
+  
+  <style>
+  
+    * {
+        box-sizing:border-box;
+      }
+      
+      header {
+        background:grey; /* why not */
+        height:50px;
+      }
+      .wrapper {
+        width:70%; /*why not */
+        height:1000px; /* ensure a scroll */
+        margin: 10px auto; /* center it */
+        background:
+          -webkit-linear-gradient(top, blue, #bada55); /* something funky */
+        background:
+          -moz-linear-gradient(top, blue, #bada55); /* something funky */
+          background:
+          linear-gradient(top, blue, #bada55); /* something funky */
+      }
+      
+      .sidebar {
+        position:fixed; /* don't you move */
+        top:70px;
+        width:14%;
+        background:lightblue;
+        padding:5px;
+      }
+      
+      .left {
+        left:1%;
+      }
+      
+      .right {
+        left:85%; /* 1% (start) + 14 (width) + 70 (main width) */
+      }
+        
+
+  
+  </style>
+  
+</head>
+
+<body>
+
+  <header>
+
+</header>
+
+<div class="wrapper">
+  
+  
+</div>
+<div class="sidebar left">
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+</div>
+<div class="sidebar right">
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+</div>
+
+
+</body>
+
+</html>
